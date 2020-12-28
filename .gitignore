@@ -5,7 +5,7 @@ _pycache_
 
 # Env
 .env
-myvenv/
+myenvi/
 venv/
 
 # Database
