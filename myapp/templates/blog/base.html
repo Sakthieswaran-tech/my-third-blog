@@ -1,4 +1,3 @@
-{% extends 'blog/base.html' %}
 {% load static %}
 <html>
     <head>
@@ -16,16 +15,8 @@
             <div class="row">
                 <div class="col-md-8">
                     {% block content %}
-                    {% for reqs in posts %}
-                        <div class="post">
-                            <div class="date">
-                                <p>published:{{reqs.published_date}}</p>
-                            </div>
-                            <h2><a href="{% url 'post_details' pk=reqs.pk %}">{{reqs.title}}</a></h2>
-                            <p>{{reqs.text|linebreaksbr}}</p>
-                        </div>
-                    {% endfor %}
                     {% endblock %}
+                        </div>
                 </div>
             </div>
         </div>    
